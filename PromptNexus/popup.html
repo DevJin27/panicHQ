@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PromptNexus</title>
   <link rel="stylesheet" href="popup.css">
 </head>
+
 <body>
   <div class="container">
     <h1>PromptNexus</h1>
+
     <div class="toggle-container">
       <label class="switch">
         <input type="checkbox" id="enabled-toggle">
@@ -16,7 +19,15 @@
       </label>
       <span id="status-text">Disabled</span>
     </div>
+
+    <div class="api-config">
+      <label for="api-url">API Endpoint:</label>
+      <input type="text" id="api-url" placeholder="https://your-backend.com/api/enhance">
+      <button id="save-api">Save</button>
+      <span id="save-status"></span>
+    </div>
   </div>
   <script src="popup.js"></script>
 </body>
+
 </html>
